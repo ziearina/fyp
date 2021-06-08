@@ -16,4 +16,12 @@
   --colour6: #00827E;
 }
 
+.site-header{
+  background-color: var(--colour3);
+  height: 125px;
+}
 
+.inner-header{
+  height: 125px;
+  background-color: var(--colour2);
+}
