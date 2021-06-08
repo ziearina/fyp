@@ -17,7 +17,7 @@
 }
 
 .site-header{
-  background-color: var(--colour5);
+  background-color: var(--colour1);
   max-height: 17vh;
   width: 100%;
   z-index: 2;
