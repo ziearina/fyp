@@ -42,10 +42,10 @@
   height: 80px;
   width: 100px;
   cursor: hand;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   z-index: 3;
 }
 
