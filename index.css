@@ -6,3 +6,14 @@
   text-decoration: none;
   font-family: ;
 }
+
+:root{
+  --colour1: #99E6B2;
+  --colour2: #7AD2A8;
+  --colour3: #5CBE9D;
+  --colour4: #3DAA93;
+  --colour5: #1F9688;
+  --colour6: #00827E;
+}
+
+
