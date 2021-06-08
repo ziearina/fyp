@@ -42,6 +42,10 @@
   height: 100%;
 }
 
+.navbar .menu{
+  display: inline-flex;
+}
+
 .logo{
   width: 170px;
   cursor: hand;
