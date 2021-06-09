@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+  
+:root{
+    --logo: #ecece4;
+    --colour1: #99E6B2;
+    --colour2: #7AD2A8;
+    --colour3: #5CBE9D;
+    --colour4: #3DAA93;
+    --colour5: #1F9688;
+    --colour6: #00827E;
+}
+  
+.site-header{
+    max-height: 200vh;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    padding-bottom: 30px;
+  
+}
+  
+.inner-header{
+    height: 125px;
+}
+  
+.navbar .logo{
+    height: 100%;
+    margin: auto;
+}
+  
+.logo{
+    width: 250px;
+    cursor: hand;
+    z-index: 3;
+    padding-top: 15px;
+}
+  
+.logo img{
+    width: 100%;
+    text-align: center;
+}
+
+.navbar{
+    background-color: var(--logo);
+}
+
+.navbar .menu{
+    text-align: center;
+}
+
+.menu .nav-menu{
+    display: inline-flex;
+    margin-top: 25px;
+    margin-bottom: 11.5px;
+    padding-left: 15px;
+}
+
+.nav-menu li a{
+    margin-right: 45px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-weight: 750px;
+}
+
+.nav-menu li a i{
+    margin-left: 5px;
+}
+
+.drop-menu-content{
+    background-color: var(--logo);
+    width: 4.33cm;
+    height: 6cm;
+    padding: 12px;
+    margin-top: 208px;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#product-menu:hover .drop-menu-content{
+    opacity: 1;
+    visibility: visible;
+    top: 21px;
+    transition: all 0.3s ease;
+}
+
+.navbar .sub-menu{
+    float: left;
+    margin-right: 15px;
+    margin-left: 45px;
+}
+
+.sub-menu i{
+    color: var(--colour6);
+    margin-right: 15px;
+    font-size: 20px;
+}
+
