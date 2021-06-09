@@ -41,10 +41,9 @@
 }
   
 .logo{
-    width: 250px;
+    width: 350px;
     cursor: hand;
     z-index: 3;
-    padding-top: 15px;
 }
   
 .logo img{
@@ -58,11 +57,11 @@
 
 .navbar .menu{
     text-align: center;
+    min-width: 40px;
 }
 
 .menu .nav-menu{
     display: inline-flex;
-    margin-top: 25px;
     margin-bottom: 11.5px;
     padding-left: 15px;
 }
