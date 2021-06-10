@@ -7,3 +7,4 @@ https://lydiahyl.github.io/fyp/index.html
 
 disclaimer:
 The CSS file: nav.css is exclusively for only the navigation bar. DO NOT add codes that are not related to the navigation bar. Thank you! :D
+Also, copy the navbar.txt in the files to insert the navigation bar. 
