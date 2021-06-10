@@ -6,4 +6,4 @@ To view it live,
 https://lydiahyl.github.io/fyp/(filename)
 
 disclaimer:
-The CSS file: nav.css is exclusively for only the navigation bar. DO NOT add codes that are not related to the navigation bar.
+The CSS file: nav.css is exclusively for only the navigation bar. DO NOT add codes that are not related to the navigation bar. Thank you! :D
