@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+  
+:root{
+    --logo: #ecece4;
+    --colour1: #99E6B2;
+    --colour2: #7AD2A8;
+    --colour3: #5CBE9D;
+    --colour4: #3DAA93;
+    --colour5: #1F9688;
+    --colour6: #00827E;
+}
+
+.products-list{
+    margin-top: auto;
+}
