@@ -81,11 +81,17 @@
     background-color: var(--logo);
     width: 4.33cm;
     height: 6cm;
-    padding: 12px;
+    padding: 5px 8px 5px;
     margin-top: 186px;
     opacity: 0;
     position: absolute;
     visibility: hidden;
+}
+
+.drop-menu-content li a{
+    font-size: 15.5px;
+    float: left;
+    padding: 12px;
 }
 
 #product-menu:hover .drop-menu-content{
