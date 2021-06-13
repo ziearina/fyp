@@ -20,7 +20,6 @@
 }
 
 .products-header{
-    /* background-color: var(--colour4); */
     overflow-x: hidden;
     margin-top: 271px;
     margin-bottom: 50px;
@@ -41,6 +40,18 @@
     height: 100%;
     background-color: var(--colour3);
 }
+
+.product-text{
+    color: var(--colour6);
+    padding: 5px;
+    position: absolute;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 100%;
+    left: 15%;
+    z-index: 1;
+}
+
 
 @media screen and (max-width: 800px){
     .product-img{
