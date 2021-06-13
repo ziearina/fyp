@@ -79,3 +79,24 @@
         margin-top: 51px;
     }
 }
+
+#filter-list{
+    display: inline-block;
+    border: 1px solid var(--colour2);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 0 80px;
+}
+
+#filter-list li{
+    display: inline-block;
+    color: var(--colour5);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0 20px;
+    min-width: 130px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
