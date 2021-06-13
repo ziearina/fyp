@@ -23,6 +23,7 @@
     overflow-x: hidden;
     margin-top: 271px;
     margin-bottom: 50px;
+    transition-duration: 0.5s;
 }
 
 .img-width{
@@ -51,6 +52,7 @@
     top: 100%;
     left: 15%;
     z-index: 1;
+    transition: .5 ease;
 }
 
 .img-slides .product-text{
