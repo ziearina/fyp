@@ -80,6 +80,10 @@
     }
 }
 
+.products-list{
+    margin-right: 45px;
+}
+
 #filter-list{
     display: inline-block;
     border: 1px solid var(--colour2);
