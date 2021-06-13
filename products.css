@@ -42,8 +42,8 @@
 }
 
 .product-text{
-    background-color: var(--colour3);
-    color: var(--colour1);
+    background-color: var(--colour6);
+    color: whitesmoke;
     padding: 5px;
     position: absolute;
     letter-spacing: 2px;
@@ -53,6 +53,9 @@
     z-index: 1;
 }
 
+.img-slides .product-text{
+    width: 100%;
+}
 
 @media screen and (max-width: 800px){
     .product-img{
