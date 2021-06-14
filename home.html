@@ -1,0 +1,332 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenZ Homepage</title>
+  <!-- <link type="text/css" href="nav.css" rel="stylesheet"/> -->
+
+  <link href="nav.css" rel="stylesheet" type="text/css" media="screen, projection"/>    
+  <link href="home.css" rel="stylesheet" type="text/css" media="screen, projection"/>    
+  <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+  <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+  
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  
+  
+</head>
+  
+<body>
+    
+  <header class="site-header">
+      
+    <div class="inner-header">
+        
+      <div class="navbar">
+            
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/grenz.png" alt="GreenZ">
+          </a>
+        </div><!--/.logo-->
+          
+        <nav class="menu">
+          <ul class="nav-menu">
+              
+            <!--HOME-->
+            <li><a href="home.html">HOME<i class="fas fa-home"></i></a></li>
+            
+            <!--ABOUT US-->
+            <li><a href="#">ABOUT US<i class="fas fa-info-circle"></i></a></li>
+            
+            <!--PROMOTIONS-->
+            <li><a href="#">PROMOTIONS<i class="fas fa-ticket-alt"></i></a></li>
+            
+            <!--PRODUCTS (DROPDOWN-MENU)-->
+            <li class="dropdown-menu" id="product-menu"><a href="products.html">PRODUCTS<i class="fas fa-angle-down"></i></a>
+              
+              <ul class="drop-menu-content">
+
+                <li><a href="#">PLANTS</a></li>
+
+                <li><a href="#">GIFTS</a></li>
+
+                <li><a href="#">TOTE BAGS</a></li>
+                
+                <li><a href="#">NOTEBOOKS</a></li>
+                
+                <li><a href="#">MASKS</a></li>
+
+              </ul>
+
+            </li>
+            
+            <!--FEEDBACK-->
+            <li><a href="feedback.html">FEEDBACK<i class="fas fa-comments"></i></a></li>
+
+            <div li class="sub-menu">
+
+              <!--CART-->
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+              <!--LOGIN/SIGNUP-->
+              <a href="#"><i class="fas fa-user"></i></a>
+
+            </div li>
+            
+            <!--SEARCH FUNCTION-->
+            <div class="search"><i class="fas fa-search"><input type="search" placeholder="Search for.." class="search-product"></i></div>
+              
+          </ul>
+        </nav><!--/.menu-->
+          
+      </div><!--/.navbar-->
+      
+        
+    </div><!--/.inner-header-->
+      
+  </header><!--/.site-header-->
+    
+  
+  <body>
+    <section class="container">
+      <!--Slideshow container-->
+   <div class="slideshow-container">
+       <!--Full width images with number and caption text-->
+       <div class="mySlides fade">
+           
+               <img src="img/image1.jpg"
+               style="width:100%; height:500px
+               ">
+               <div class="text"></div>
+       </div>  
+               <div class="mySlides fade">
+                 
+                   <img src="img/image2.jpg"
+                   Style= "width:100%; height:500px">
+                   <div class="text"></div>
+               </div>
+               <div class="mySlides fade">
+
+                  <img src="img/grenz.png"
+                  Style= "width:100%; height:500px">
+                  <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+             
+                  <img src="img/image2.jpg"
+                  Style= "width:100%; height:500px">
+                  <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+              
+                  <img src="img/image1.jpg"
+                  Style= "width:100%; height:500px;">
+                  <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+                 
+                  <img src="img/image2.jpg"
+                  Style= "width:100%; height:500px;object-fit: cover;vertical-align: middle;">
+                  <div class="text"></div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+   </div>
+   <br>
+       <!--The dots-->
+  <div style="text-align:center">
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+  </div> 
+      <script>
+        var slideIndex = 0;
+showSlides();
+//add the global timer variable
+var slides,dots,timer;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("mySlides");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    //put the timeout in the timer variable
+    timer = setTimeout(showSlides, 4000); // Change image every 8 seconds
+}
+
+function plusSlides(position) {
+    //clear/stop the timer
+    clearTimeout(timer);
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    //create a new timer
+    timer = setTimeout(showSlides, 3000);
+}
+
+function currentSlide(index) {
+    //clear/stop the timer
+    clearTimeout(timer);
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    //set the slideIndex with the index of the function
+    slideIndex = index;
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[index-1].style.display = "block";  
+    dots[index-1].className += " active";
+    //create a new timer
+    timer = setTimeout(showSlides, 3000);
+}
+          </script>       
+      </section>
+   
+     <br><br><br>
+     <div class = "Description">
+     <center><h2>GreenZ</h2><br>
+       <p>We provide you the best Eco-friendly products. Let us all protect the environment and save the earth.</p>
+      </center>
+      </div><br>
+      <center><textarea id="w3review" name="w3review" rows="2" cols="180"
+       style="resize:none;"
+       text-align="center"disabled>
+        NEW ARRIVALS
+        </textarea></center>
+        <br>
+        
+        <section class="section">
+        <div class="column">
+          <a href="#cart">
+          <img src="img/flowercandle.jpg"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Flower Candle</p>
+          <p>RM 35</p>
+        </div>
+      </div>
+        
+      <div class="column">
+        <a href="#cart">
+          <img src="img/mask.png"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Mask</p>
+          <p>RM 30</p>
+        </div>
+      </div>
+
+        <div class="column">
+          <a href="#cart">
+          <img src="img/flowersoap.jpg"alt="cotton_cheesecake"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Flower Soap</p>
+          <p>RM 40</p>
+        </div>
+      </div>
+
+          <div class="column">
+            <a href="#cart">
+          <img src="img/notebook.jpg"alt="cotton_cheesecake"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Notebook</p>
+          <p>RM 15</p>
+          </div>
+        </div>
+      </section>
+
+    
+      <br>
+      <section class="section1">
+      <div class="leaf">
+        
+      <img src="img/leaf1.png" align="left"
+      style="width: 680px;
+      height: 500px;
+      margin-left: 0px;
+      margin-top: 0px;"></a>
+      <div class="text1"> 
+      <h1>Eco-Friendly provides you a better future</h1>
+      
+      </div>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="candle">
+      
+    <img src="img/candle.jpg"
+    style="width: 680px;
+    height: 500px;
+    margin-left: 680px;
+    margin-top: 20px;"></a>
+    <div class="text2"> 
+    <p></p>
+    
+    </div>
+  </div>
+</section>
+<section class="section3">
+  <div class="soap">
+    
+  <img src="img/flowersoapbox.jpg" align="left"
+  style="width: 680px;
+  height: 500px;
+  margin-left: 0px;
+  margin-top: 20px;"></a>
+  <div class="text3"> 
+  <p></p>
+  
+  </div>
+</div>
+</section>
+      </body>
+      </html>
+      
+
+
+    
+  
+</body>
