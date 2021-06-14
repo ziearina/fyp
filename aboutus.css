@@ -1,0 +1,73 @@
+.aboutus{
+    margin-top: 170px;
+    text-align: center;
+}
+
+.caption{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ourteam{
+    text-align: center;
+    margin-top: -0.3%;
+    /*background-color: rgb(236, 236, 209);*/
+}
+
+.ourteam img{
+    border-radius: 50%;
+    margin-top: 23px;
+    height: 300px;
+    width: 300px;
+}
+
+.column{
+    display: inline-table;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.contactus{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.icon{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.parent{
+    /*background-color: rgb(236, 236, 209);*/
+    padding-top: 5%;
+}
+
+.links{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.pages{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.left
+{
+	float:left;
+	width:50%;
+    /*background-color: rgb(236, 236, 209);*/
+	/*padding:5px;*/
+	min-height:310px;
+}
+
+.right
+{
+	float:left;
+	width:50%;
+    /*background-color: rgb(236, 236, 209);*/
+	/*padding:5px;*/
+	min-height:310px;
+}
