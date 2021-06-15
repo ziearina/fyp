@@ -105,3 +105,34 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+#filter-list li.active, #filter-list li:hover{
+    background-color: var(--colour4);
+    color: whitesmoke;
+}
+
+.products-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-gallery .product-img{
+    padding: 7px;
+    width: calc(100% / 4);
+}
+
+.products-gallery .product-img span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.products-gallery .product-img img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.products-gallery .product-img:hover img{
+    transform: scale(1.1);
+}
