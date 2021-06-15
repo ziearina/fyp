@@ -5,7 +5,7 @@ var slideIndex = 0;
 let count = 1;
 slidefun(count);
 
-let timer = setInterval(autoslide, 8000);
+let timer = setInterval(autoslide, 4000);
 
 function autoslide() {
     counter += 1;
@@ -26,7 +26,7 @@ function currentSlide(n){
 
 function resetTimer(){
     clearInterval(timer);
-    timer = setInterval(autoslide, 8000);
+    timer = setInterval(autoslide, 4000);
 }
 
 function slidefun(n) {
