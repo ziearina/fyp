@@ -1,59 +1,46 @@
-var slideIndex = 0;
-showSlides();
-//add the global timer variable
-var slides,dots,timer;
+const imgslide = document.querySelectorAll('.home-slides'), dot = document.querySelectorAll('.dot');
 
-function showSlides() {
-    var i;
-    slides = document.getElementsByClassName("home-slides");
-    dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    //put the timeout in the timer variable
-    timer = setTimeout(showSlides, 4000); // Change image every 8 seconds
+let count = 1;
+slidefun(count);
+
+let timer = setInterval(autoslide, 8000);
+
+function autoslide() {
+    counter += 1;
+    slidefun(count);
 }
 
-function plusSlides(position) {
-    //clear/stop the timer
-    clearTimeout(timer);
-    slideIndex +=position;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    else if(slideIndex<1){slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    //create a new timer
-    timer = setTimeout(showSlides, 3000);
+function moveSlides(n) {
+    count += n;
+    slidefun(count);
+    resetTimer();
 }
 
-function currentSlide(index) {
-    //clear/stop the timer
-    clearTimeout(timer);
-    if (index> slides.length) {index = 1}
-    else if(index<1){index = slides.length}
-    //set the slideIndex with the index of the function
-    slideIndex = index;
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+function currentSlide(n){
+    count += n;
+    slidefun(count);
+    resetTimer();
+}
+
+function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(autoslide, 8000);
+}
+
+function slidefun(n) {
+    let i
+    for(i = 0; i < imgslide.length; i++) {
+        imgslide[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for(i = 0; i < dot.length; i++) {
+        dot[i].classList.remove('active');
     }
-    slides[index-1].style.display = "block";  
-    dots[index-1].className += " active";
-    //create a new timer
-    timer = setTimeout(showSlides, 3000);
+    if(n > imgslide.length){
+        count = 1;
+    }
+    if(n < 1){
+        count = imgslide.length;
+    }
+    imgslide[counter - 1].style.display = "block";
+    dot[counter - 1].classList.add('active');
 }
