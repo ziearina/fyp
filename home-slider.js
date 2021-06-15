@@ -1,5 +1,7 @@
 const imgslide = document.querySelectorAll('.home-slides'), dot = document.querySelectorAll('.dot');
 
+var slideIndex = 0;
+
 let count = 1;
 slidefun(count);
 
@@ -10,7 +12,7 @@ function autoslide() {
     slidefun(count);
 }
 
-function moveSlides(n) {
+function plusSlides(n) {
     count += n;
     slidefun(count);
     resetTimer();
@@ -41,6 +43,6 @@ function slidefun(n) {
     if(n < 1){
         count = imgslide.length;
     }
-    imgslide[counter - 1].style.display = "block";
-    dot[counter - 1].classList.add('active');
+    imgslide[count - 1].style.display = "block";
+    dot[count - 1].classList.add('active');
 }
