@@ -53,9 +53,10 @@
 {
 	float:left;
 	width:50%;
-    background-color: #5f9e97;
-	/*padding:5px;*/
-    padding-top: 40px;
+    /*background-color: #5f9e97;
+	padding:5px;*/
+	background-color:rgba(217, 247, 208, 0.932);
+   	padding-top: 40px;
 	min-height: 310px;
 }
 
@@ -63,9 +64,10 @@
 {
 	float:left;
 	width:50%;
-    background-color: #5f9e97;
-    /*padding:5px;*/
-    padding-top: 40px;
+    /*background-color: #5f9e97;
+    padding:5px;*/
+	background-color:rgba(217, 247, 208, 0.932);
+    	padding-top: 40px;
 	min-height: 364px;
 }
 
