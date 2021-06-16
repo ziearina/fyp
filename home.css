@@ -198,7 +198,32 @@ text-align: center;
     width: 100%;
 }
 
+/*-------SHOP MORE BUTTON-------*/
 .shop-more{
-    width: 20px;
-    height: 20px;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+
+.shop{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.shop i{
+    padding-left: 15px;
+    
+}
+
+/*-------FOOTER-------*/
+
+footer{
+    background-color: #00827E;
+    margin-top: 35px;
+}
+
+.social-media, .bank-acc{
+    border-top: 1px solid black;
+    margin: 10px 0 0;
+    padding: 10px 0 30px;
 }
