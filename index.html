@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenZ Homepage</title>
+  <link type="text/css" href="nav.css" rel="stylesheet"/>
+  <link href="home.css" rel="stylesheet" type="text/css" media="screen, projection"/>
+  <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+  <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+  
+</head>
+  
+<body>
+
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      
+      <div class="inner-header">
+          
+        <div class="navbar">
+              
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/grenz.png" alt="GreenZ">
+            </a>
+          </div><!--/.logo-->
+            
+          <nav class="menu">
+            <ul class="nav-menu">
+                
+              <!--HOME-->
+              <li><a href="index.html">HOME<i class="fas fa-home"></i></a></li>
+              
+              <!--ABOUT US-->
+              <li><a href="aboutus.html">ABOUT US<i class="fas fa-info-circle"></i></a></li>
+              
+              <!--PROMOTIONS-->
+              <li><a href="#">PROMOTIONS<i class="fas fa-ticket-alt"></i></a></li>
+              
+              <!--PRODUCTS (DROPDOWN-MENU)-->
+              <li class="dropdown-menu" id="product-menu"><a href="products.html">PRODUCTS<i class="fas fa-angle-down"></i></a>
+                
+                <ul class="drop-menu-content">
+  
+                  <li><a href="#">PLANTS</a></li>
+  
+                  <li><a href="#">GIFTS</a></li>
+  
+                  <li><a href="#">TOTE BAGS</a></li>
+                  
+                  <li><a href="#">NOTEBOOKS</a></li>
+                  
+                  <li><a href="#">MASKS</a></li>
+  
+                </ul>
+  
+              </li>
+              
+              <!--FEEDBACK-->
+              <li><a href="feedback.html">FEEDBACK<i class="fas fa-comments"></i></a></li>
+  
+              <div li class="sub-menu">
+  
+                <!--CART-->
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+  
+                <!--LOGIN/SIGNUP-->
+                <a href="#"><i class="fas fa-user"></i></a>
+  
+              </div li>
+              
+              <!--SEARCH FUNCTION-->
+              <div class="search"><i class="fas fa-search"><input type="search" placeholder="Search for.." class="search-product"></i></div>
+                
+            </ul>
+          </nav><!--/.menu-->
+            
+        </div><!--/.navbar-->
+        
+          
+      </div><!--/.inner-header-->
+        
+    </header><!--/.site-header-->
+    
+    <!-------START OF CONTENT-------->
+  
+    <!-----------------IMAGE SLIDER----------------->
+    <section class="imgslider-container">
+      
+      <!--SLIDESHOW CONTAINER-->
+      <div class="slideshow-container">
+        
+        <!--Full width images with number and caption text-->
+        <!--IMAGE 1-->
+        <div class="home-slides fade">
+          
+          <img src="img/welcomegreenz.jpeg" class="img-in-slide slide-img-1"/>
+          
+        </div><!--/.home-slides fade-->
+        
+        <!--IMAGE 2-->
+        <div class="home-slides fade">
+          
+          <img src="img/page2.jpeg" class="img-in-slide"/>
+          
+        </div><!--/.home-slides fade-->
+        
+        <!--IMAGE 3-->
+        <div class="home-slides fade">
+          
+          <img src="img/page3.jpeg" class="img-in-slide"/>
+          
+        </div><!--/.home-slides fade-->
+        
+        <!--IMAGE 4-->
+        <div class="home-slides fade">
+          
+          <img src="img/page4.jpeg" class="img-in-slide"/>
+          
+        </div><!--/.home-slides fade-->
+        
+        <!--IMAGE 5-->
+        <div class="home-slides fade">
+          
+          <img src="img/page5.jpeg" class="img-in-slide"/>
+          
+        </div><!--/.home-slides fade-->
+        
+        
+        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
+        
+        <div class="nav-dots">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+      </div><!--/.slideshow-container-->
+      
+      <script src="img-slider.js" type="text/javascript"></script>
+      <!-- <script src="img-slider.js" type="text/javascript"></script> -->
+    
+    </section><!--/.imgslider-container-->
+  
+    <!-----------------NEW ARRIVALS----------------->
+  
+    <section class="new-arrivals">
+  
+      <h3>NEW ARRIVALS</h3>
+  
+      <div class="new-products">
+  
+        <!---PRODUCT 1---->
+        <div class="col-product">
+  
+          <a href="products.html">
+            <img src="img/flowercandle.jpg" alt="New Arrivals" class="item-img">
+          </a>
+  
+          <div class="item-desc">
+            <h5>Flower Candle</h5>
+            <p>RM 35</p>
+          </div>
+  
+        </div><!--/.col-product-->
+  
+        <!---PRODUCT 2---->
+        <div class="col-product">
+  
+          <a href="products.html">
+            <img src="img/mask.png" alt="New Arrivals" class="item-img">
+          </a>
+          
+          <div class="item-desc">
+            <h5>Mask</h5>
+            <p>RM 30</p>
+          </div>
+  
+        </div><!--/.col-product-->
+  
+        <!---PRODUCT 3---->
+        <div class="col-product">
+  
+          <a href="products.html">
+            <img src="img/flowersoap.jpg" alt="New Arrivals" class="item-img">
+          </a>
+          
+          <div class="item-desc">
+            <h5>Flower Soap</h5>
+            <p>RM 40</p>
+          </div>
+  
+        </div><!--/.col-product-->
+  
+        <!---PRODUCT 4---->
+        <div class="col-product">
+  
+          <a href="products.html">
+            <img src="img/notebook.jpg" alt="New Arrivals" class="item-img">
+          </a>
+          
+          <div class="item-desc">
+            <h5>Notebook</h5>
+            <p>RM 15</p>
+          </div>
+  
+        </div><!--/.col-product-->
+  
+      </div><!--/.new-products-->
+  
+    </section><!--/.new-arrivals-->
+    
+    <!-----------------BANNERS----------------->
+    <section class="banners">
+  
+      <!-----BANNER 1----->
+      <div class="row-banner">
+  
+        <img src="img/cactus.jpg" alt="" class="img-banner left">
+  
+        <div class="txt-banner-left">
+          <h1>Plant to save the Planet</h1>
+          <p>In need of earth day ideas for work? Consider gifting employees and clients a planter like the Single Potted Plant Kit that's pictured, or seed packets. Garden gifts and plants help get the whole family get involved and will be a happy memory that is directly associated with your brand.</p>
+        </div><!--/.txt-banner-->
+  
+      </div><!--/.row-banner-->
+  
+      <!-----BANNER 2----->
+      <div class="row-banner">
+  
+        <div class="txt-banner">
+          <h1>Reduce, Reuse, Recycle</h1>
+          <p>When looking for products that promote sustainability, this tote bag, made from recycled cotton, is sure to be toted around farmers markets, grocery stores and parks.</p>
+        </div><!--/.txt-banner-->
+  
+        <img src="img/tote.jpg" alt="" class="img-banner right">
+  
+      </div><!--/.row-banner-->
+  
+      <!-----BANNER 3----->
+      <div class="row-banner">
+  
+        <img src="img/flowersoapbox.jpg" alt="" class="img-banner left">
+  
+        <div class="txt-banner-left">
+          <h1>Flower Soap</h1>
+          <p>A soap flower is fragranced soap, crafted into the shape of real flowers. More specifically, roses, carnations, gerbera daisies and even a sprinkling of chrysanthemums.</p>
+        </div><!--/.txt-banner-->
+  
+      </div><!--/.row-banner-->
+
+      <!-----BANNER 4----->
+      <div class="row-banner">
+  
+        <div class="txt-banner">
+          <h1>Plastic-Free Cleaning Supplies</h1>
+          <p>Zero Waste and Reusable Products for your home and kitchen.</p>
+        </div><!--/.txt-banner-->
+  
+        <img src="img/cleaning.png" alt="" class="img-banner right">
+  
+      </div><!--/.row-banner-->
+  
+    </section><!--/.banners-->
+
+    <section class="shop-more">
+      <div class="shop">
+        <a href="products.html">SHOP MORE<i class="fas fa-angle-right"></i></a>
+      </div>
+    </section><!--/.shop-more-->
+
+  </div><!--/.site-wrapper-->
+
+  <footer>
+    <center class="social-media">
+      <h4>FOLLOW US FOR MORE</h4>
+      <a href="aboutus.html"><img src="img/facebook.png" alt="GreenZ Facebook Page"></a>
+      <a href="aboutus.html"><img src="img/ig.png" alt="GreenZ Instagram"></a>
+      <a href="aboutus.html"><img src="img/twitter.png" alt="GreenZ Twitter"></a>
+    </center>
+
+    <center class="bank-acc">
+      <h4>ALL RIGHTS RESERVED GREENZ.</h4>
+      <img src="img/visa.png" alt="">
+      <img src="img/visa1.png" alt="">
+      <img src="img/paypal.png" alt="">
+    </center>
+
+
+  </footer>
+  
+</body>
