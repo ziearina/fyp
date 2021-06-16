@@ -45,5 +45,5 @@ function slidefun(n) {
     }
     imgslide[count - 1].style.display = "block";
     dot[count - 1].classList.add('active');
-    timer = setTimeout(autoslide, 400);
+    timer = setTimeout(autoslide, 4000);
 }
