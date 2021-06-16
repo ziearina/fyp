@@ -5,7 +5,7 @@ var slideIndex = 0;
 let count = 1;
 slidefun(count);
 
-let timer = setInterval(autoslide, 4000);
+let timer = setInterval(imgslide, 4000);
 
 function autoslide() {
     counter += 1;
@@ -26,7 +26,7 @@ function currentSlide(n){
 
 function resetTimer(){
     clearInterval(timer);
-    timer = setInterval(autoslide, 4000);
+    timer = setInterval(imgslide, 4000);
 }
 
 function slidefun(n) {
@@ -45,5 +45,5 @@ function slidefun(n) {
     }
     imgslide[count - 1].style.display = "block";
     dot[count - 1].classList.add('active');
-    timer = setTimeout(autoslide, 4000);
+    timer = setTimeout(imgslide, 4000);
 }
