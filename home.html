@@ -1,0 +1,551 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenZ Homepage</title>
+  <!-- <link type="text/css" href="nav.css" rel="stylesheet"/> -->
+
+  <link href="nav.css" rel="stylesheet" type="text/css" media="screen, projection"/>    
+  <link href="home.css" rel="stylesheet" type="text/css" media="screen, projection"/>    
+  <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+  <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+  
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<style>
+body{
+  background-color:rgba(217, 247, 208, 0.932);
+  font-family: verdana;
+}
+.mySlides {display:none;}
+    .container{
+  background-color: none;
+}
+
+*{box-sizing:border-box;}
+/* body {font-family: Verdana, sans-serif;} */
+/* slideshow container */
+.slideshow-container
+{
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+  margin-top:190px;
+  
+}
+/* hide the images by default*/
+.myslides
+{
+  display:none;
+}
+img{
+  vertical-align: middle;
+  background-color:none;
+  /* object-fit: cover; */
+}
+.text
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #494B55;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+.dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+}
+.active, .dot:hover {
+	background-color: #494B55;
+}
+.active {
+  background-color: #717171;
+}
+.fade{
+  -webkit-animation-name:fade;
+  -webkit-animation-duration:1.5s;
+  animation-name:fade;
+  animation-duration: 1.5;
+}
+@-webkit-keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade{
+  from {opacity: .4}
+  to {opacity:1}
+}
+.newarrivals {
+  
+  margin-top:20px;
+  
+ 
+}
+.section{
+    margin-right: 15%;
+    margin-bottom: 10px;
+  }
+.column{
+    width: 24%;
+    display: inline-block;
+  }
+  .item{
+      text-align: center;
+      margin-left: 150px;
+      width: 70%;
+      font-size:medium;
+      margin-top:10px;
+  }
+  .text1{
+    background-color:rgba(199, 253, 199, 0.541);
+    text-align: center;
+    line-height: 1cm;
+    height:500px;
+    
+  }
+.text2{
+  background-color:rgba(199, 253, 199, 0.541);
+    text-align: center;
+    line-height: 1cm;
+    height:500px;
+    margin-left:0px;  
+}
+.text3{
+    background-color:rgba(199, 253, 199, 0.541);
+    text-align: center;
+    line-height: 1cm;
+    height:500px;
+    
+  }
+  .text4{
+  background-color:rgba(199, 253, 199, 0.541);
+    text-align: center;
+    line-height: 1cm;
+    height:500px;
+    margin-left:0px;  
+}
+.shop{
+  display:inline-flex;
+  margin-left:1220px;
+  
+}
+
+</style>
+  
+  
+</head>
+  
+<body>
+    
+  <header class="site-header">
+      
+    <div class="inner-header">
+        
+      <div class="navbar">
+            
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/grenz.png" alt="GreenZ">
+          </a>
+        </div><!--/.logo-->
+          
+        <nav class="menu">
+          <ul class="nav-menu">
+              
+            <!--HOME-->
+            <li><a href="home.html">HOME<i class="fas fa-home"></i></a></li>
+            
+            <!--ABOUT US-->
+            <li><a href="#">ABOUT US<i class="fas fa-info-circle"></i></a></li>
+            
+            <!--PROMOTIONS-->
+            <li><a href="#">PROMOTIONS<i class="fas fa-ticket-alt"></i></a></li>
+            
+            <!--PRODUCTS (DROPDOWN-MENU)-->
+            <li class="dropdown-menu" id="product-menu"><a href="products.html">PRODUCTS<i class="fas fa-angle-down"></i></a>
+              
+              <ul class="drop-menu-content">
+
+                <li><a href="#">PLANTS</a></li>
+
+                <li><a href="#">GIFTS</a></li>
+
+                <li><a href="#">TOTE BAGS</a></li>
+                
+                <li><a href="#">NOTEBOOKS</a></li>
+                
+                <li><a href="#">MASKS</a></li>
+
+              </ul>
+
+            </li>
+            
+            <!--FEEDBACK-->
+            <li><a href="feedback.html">FEEDBACK<i class="fas fa-comments"></i></a></li>
+
+            <div li class="sub-menu">
+
+              <!--CART-->
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+              <!--LOGIN/SIGNUP-->
+              <a href="#"><i class="fas fa-user"></i></a>
+
+            </div li>
+            
+            <!--SEARCH FUNCTION-->
+            <div class="search"><i class="fas fa-search"><input type="search" placeholder="Search for.." class="search-product"></i></div>
+              
+          </ul>
+        </nav><!--/.menu-->
+          
+      </div><!--/.navbar-->
+      
+        
+    </div><!--/.inner-header-->
+      
+  </header><!--/.site-header-->
+    
+  
+  <body>
+    <section class="container">
+      <!--Slideshow container-->
+   <div class="slideshow-container">
+       <!--Full width images with number and caption text-->
+       <div class="mySlides fade">
+           
+               <img src="img/welcomegreenz.jpeg"
+               style="width:100%; height:500px
+               ">
+               <div class="text"></div>
+       </div>  
+               <div class="mySlides fade">
+                 
+                   <img src="img/page2.jpeg"
+                   Style= "width:100%; height:500px">
+                   <div class="text"></div>
+               </div>
+               <div class="mySlides fade">
+
+                  <img src="img/page3.jpeg"
+                  Style= "width:100%; height:500px"
+                  >
+                  <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+             
+                  <img src="img/page4.jpeg"
+                  Style= "width:100%; height:500px"
+                 >
+                  <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+              
+                  <img src="img/page5.jpeg"
+                  Style= "width:100%; height:500px;">
+                  <div class="text"></div>
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   </div>
+   <br>
+       <!--The dots-->
+  <div style="text-align:center">
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+      <span class="dot"onclick="currentSlide(1)"></span>
+     
+  </div> 
+      <script>
+        var slideIndex = 0;
+showSlides();
+//add the global timer variable
+var slides,dots,timer;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("mySlides");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    //put the timeout in the timer variable
+    timer = setTimeout(showSlides, 4000); // Change image every 8 seconds
+}
+
+function plusSlides(position) {
+    //clear/stop the timer
+    clearTimeout(timer);
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    //create a new timer
+    timer = setTimeout(showSlides, 4000);
+}
+
+function currentSlide(index) {
+    //clear/stop the timer
+    clearTimeout(timer);
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    //set the slideIndex with the index of the function
+    slideIndex = index;
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[index-1].style.display = "block";  
+    dots[index-1].className += " active";
+    //create a new timer
+    timer = setTimeout(showSlides, 4000);
+}
+          </script>       
+      </section>
+   
+     <br><br><br>
+      <div class = "newarrivals">
+      <center><h3>NEW ARRIVALS</h3><br>
+       </center></div> 
+        <section class="section">
+        <div class="column">
+          <a href="#cart">
+          <img src="img/flowercandle.jpg"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Flower Candle</p>
+          <p>RM 35</p>
+        </div>
+      </div>
+        
+      <div class="column">
+        <a href="#cart">
+          <img src="img/mask.png"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Mask</p>
+          <p>RM 30</p>
+        </div>
+      </div>
+
+        <div class="column">
+          <a href="#cart">
+          <img src="img/flowersoap.jpg"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Flower Soap</p>
+          <p>RM 40</p>
+        </div>
+      </div>
+
+          <div class="column">
+            <a href="#cart">
+          <img src="img/notebook.jpg"
+          style="width: 250px;
+          height: 260px;
+          margin-left: 127px;
+          margin-top: 20px;"></a>
+          <div class="item"> 
+          <p>Notebook</p>
+          <p>RM 15</p>
+          </div>
+        </div>
+      </section>
+
+    
+      <br>
+      <section class="section1">
+      <div class="leaf">
+        
+      <img src="img/cactus.jpg" align="left"
+      style="width: 680px;
+      height: 500px;
+      margin-left: 0px;
+      margin-top: 0px;"></a>
+      <div class="text1"> 
+        <br><br><br><br>
+      <h1>Plant to save the Planet</h1>
+      <p>In need of earth day ideas for work? Consider gifting employees and clients a planter like 
+        the Single Potted Plant Kit that's pictured, or seed packets. Garden gifts and plants help 
+        get the whole family get involved and will be a happy memory that is directly associated with your brand.
+      </p>
+      
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="section2">
+    <div class="candle">
+      <img src="img/tote.jpg" 
+      style="width: 670px;
+      height: 500px;
+      float:right;"></a>
+      <div class="text2"> 
+        <br><br><br><br>
+        <h1>Reduce, Reuse, Recycle</h1>
+      <p>When looking for products that promote sustainability, 
+        this tote bag, made from recycled cotton, 
+        is sure to be toted around farmers markets, 
+        grocery stores and parks.</p>
+     
+        
+     </div>
+  </div>
+</section>
+<br>
+<section class="section3">
+  <div class="soap">
+    
+  <img src="img/flowersoapbox.jpg" align="left"
+  style="width: 680px;
+  height: 500px;
+  margin-left: 0px;
+  margin-top: 0px;"></a>
+  <div class="text3"> 
+   
+       <br><br><br><br>
+     <h1>Flower Soap</h1>
+     <p> A soap flower is fragranced soap, crafted into the shape of real flowers. 
+       More specifically, roses, carnations, gerbera daisies and even a sprinkling of chrysanthemums.
+     </p>
+     
+     </div>
+  </div>
+</div>
+</section>
+
+<br>
+<section class="section4">
+  <div class="candle">
+    <img src="img/cleaning.png" 
+    style="width: 670px;
+    height: 500px;
+    float:right;
+    
+   
+    "></a>
+    <div class="text4"> 
+      <br><br><br><br>
+      <h1>Plastic-Free Cleaning Supplies</h1>
+    <p>Zero Waste and Reusable Products for your home and kitchen.</p>
+   
+      
+   </div>
+</div>
+</section><br><br>
+<div class="shop">
+<h4>SHOP MORE<h4>
+
+
+<a href="#products">
+  <img src="img/right1.png"
+  style="width: 20px;
+  height: 20px;
+  "></a></div><br><br><br>
+<center><hr height="" width="1300"><footer>
+  <br>
+
+  <p>FOLLOW US FOR MORE</p>
+   <a href="#aboutus">
+    <img src="img/fb.png"
+    style="width: 40px;
+    height: 40px;
+    margin-top: 10px;"></a>
+    
+    <a href="#aboutus">
+      <img src="img/insta.png"
+      style="width: 40px;
+      height: 40px;
+      margin-top: 10px;"></a>
+      
+      <a href="#aboutus">
+        <img src="img/twitter.png"
+        style="width: 40px;
+        height: 40px;
+        margin-top: 10px;"></a>
+    <br><br><hr height="" width="1300"><br>
+    <p>ALL RIGHTS RESERVED GREENZ.</p>
+    
+      <img src="img/visa.png"
+      style="width: 40px;
+      height: 40px;
+      margin-top: 10px;">
+
+      <img src="img/visa1.png"
+      style="width: 40px;
+      height: 40px;
+      margin-top: 10px;">
+
+      <img src="img/paypal.png"
+      style="width: 40px;
+      height: 40px;
+      margin-top: 10px;">
+</footer></center>
+      </body>
+      </html>
+      
+
+
+    
+  
+</body>
