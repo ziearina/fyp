@@ -1,0 +1,256 @@
+:root{
+    --logo: #ecece4;
+    --colour1: #99E6B2;
+    --colour2: #7AD2A8;
+    --colour3: #5CBE9D;
+    --colour4: #3DAA93;
+    --colour5: #1F9688;
+    --colour6: #00827E;
+}
+
+/*-------IMAGE SLIDER-------*/
+.imgslider-container{
+    background-color: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top:200px;
+}
+
+.home-slides {
+    
+    height: 655px;
+    overflow: hidden;
+}
+
+/* the actual images in .home-slides*/
+.img-in-slide{
+    width: 100%;
+    height: 500px;
+    /* display: none; */
+}
+
+.slide-img-1 {
+    display: block;
+}
+
+/* .text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+} */
+
+.prev, .next {
+    position: absolute;
+    top: 250px;
+    transform: translate(0, -50%);
+    font-size: 18px;
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*div contains all the dots*/
+.nav-dots{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 520px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+
+.active, .dot:hover {
+    background-color: #494B55;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name:fade;
+    animation-duration: 1.5;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity:1}
+}
+
+
+/*-------DESCRIPTION-------*/
+
+.description{
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+.description h2{
+    padding: 10px 0 10px;
+    color: black;
+}
+
+.description p{
+    line-height: 30px;
+}
+
+/*-------NEW ARRIVALS-------*/
+
+.new-arrivals{
+    margin-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.new-arrivals h3{
+    background-color: var(--colour4);
+    padding: 8px 0 8px;
+    text-align: center;
+
+}
+
+.new-products .col-product{
+    margin-top: 15px;
+    display: inline-grid;
+}
+
+.col-product{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.item-img{
+    width: 250px;
+    height: 260px;
+}
+
+.item-desc{
+    text-align: center;
+}
+
+/* .text1{
+    background-color:lightgreen;
+    text-align: justify;
+
+} */
+
+/*-------BANNERS-------*/
+
+.banners{
+    overflow-x: hidden;
+    background-color:rgba(199, 253, 199, 0.541);
+}
+
+.row-banner{
+    display: inline-flex;
+    margin: 10px 0 10px;
+    width: 100%;
+}
+
+.img-banner{
+    width: 660px;
+    height: 500px;
+    
+}
+
+.left{
+    margin-left: 15px;
+}
+
+.right{
+    margin-right: 15px;
+}
+
+
+.txt-banner-left, .txt-banner{
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    line-height: 1cm;
+    text-align: justify;
+}
+
+.txt-banner{
+    margin-left: 25px;
+    width: 100%;
+}
+
+/*-------SHOP MORE BUTTON-------*/
+.shop-more{
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+
+.shop{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.shop a:visited{
+    color: var(--colour6);
+}
+
+.shop i{
+    padding-left: 15px;
+    
+}
+
+/*-------FOOTER-------*/
+
+footer{
+    background-color: var(--colour5);
+    margin-top: 35px;
+}
+
+.social-media, .bank-acc{
+    border-top: 1px solid black;
+    margin: 10px 0 0;
+    padding: 10px 0 10px;
+}
+
+.social-media img, .bank-acc img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
