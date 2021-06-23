@@ -84,5 +84,5 @@ document.querySelector('.btnRegister').onclick = function(){
 
 // direct user to Login Page
 document.getElementById("btnSignIn").onclick = function(){
-    location.href = "login.html";
+    location.href = "log-in.html";
 };
