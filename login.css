@@ -20,179 +20,178 @@
 }
 
 body{
-    overflow-y: hidden;
-    overflow-x: hidden;
+    	overflow-y: hidden;
+    	overflow-x: hidden;
     
 }
 
 .site-container{
-    background-image: url(img/ghouse.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    	background-image: url(img/ghouse.jpg);
+    	background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
 }
 
 .login-container{
-    backdrop-filter: blur(2px);
-    background: rgba(255, 255, 255, 0.2);
-    height: 100vh;
+    	backdrop-filter: blur(2px);
+    	background: rgba(255, 255, 255, 0.2);
+    	height: 100vh;
 	width: 100%;
 }
 
 .login-container .login{
-    position: relative;
-    z-index: 500;
-    margin-top: 5px;
+    	position: relative;
+    	z-index: 500;
 }
 
 .login{
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    width: 100vh;
-    height: 60vh;
-    margin: auto;
-    top: 20%;
+    	background-color: rgb(255, 255, 255);
+    	border-radius: 12px;
+    	width: 100vh;
+    	height: 60vh;
+    	margin: auto;
+    	top: 20%;
 }
 
 .login-banner{
-    background: rgb(2,0,36);
-    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(0,130,126,1) 51%, rgba(19,161,171,1) 77%, rgba(53,219,253,0.48110259433962266) 96%);
-    float: left;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    color: white;
+    	background: rgb(2,0,36);
+    	background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(0,130,126,1) 51%, rgba(19,161,171,1) 77%, rgba(53,219,253,0.48110259433962266) 96%);
+    	float: left;
+    	width: 50%;
+    	height: 100%;
+    	text-align: center;
+    	color: white;
 }
 
 .login-banner h1{
-    padding-top: 50px;
+    	padding-top: 50px;
 }
 
 .login-banner h3{
-    padding-top: 30px;
-    padding-bottom: 10px;
+    	padding-top: 30px;
+    	padding-bottom: 10px;
 }
 
 .login-banner .welcome-text{
-    padding: 30px;
-    font-size: 10px;
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    	padding: 30px;
+    	font-size: 10px;
+    	text-align: justify;
+    	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sign-up-text{
-    font-size: 9px;
-    padding-bottom: 5px;
+    	font-size: 9px;
+    	padding-bottom: 5px;
 }
 
 .btnSignUp{
-    outline: none;
-    padding: 3px;
-    border: 2px solid white;
-    background-color: transparent;
-    text-transform: uppercase;
-    color:white;
+    	outline: none;
+    	padding: 3px;
+    	border: 2px solid white;
+    	background-color: transparent;
+    	text-transform: uppercase;
+    	color:white;
 }
 
 .btnSignUp:hover{
-    transform: scale(1.1, 1.2);
-    padding-left: 4px;
-    padding-right: 4px;
-    color:#7AD2A8;
-    border: 1px solid #7AD2A8;
+    	transform: scale(1.1, 1.2);
+    	padding-left: 4px;
+    	padding-right: 4px;
+    	color:#7AD2A8;
+    	border: 1px solid #7AD2A8;
 }
 
 .btnSignUp:hover h1{
-    color:#7AD2A8
+    	color:#7AD2A8
 }
 
 .login-container .login-form{
-    float: right;
+    	float: right;
 }
 
 .login-banner .login-form{
-    display: inline-block;
+    	display: inline-block;
 }
 
 .login-form{
-    width: 50%;
-    height: 100%;
-    padding-top: 50px;
-    padding-left: 15px;
+    	width: 50%;
+    	height: 100%;
+    	padding-top: 50px;
+    	padding-left: 15px;
 }
 
 .inner-login-form{
-    margin-right: 15px;
-    height: 85%;
+    	margin-right: 15px;
+    	height: 85%;
 }
 
 .txt-group{
-    padding-top: 45px;
+    	padding-top: 45px;
 }
 
 
 .center-btn{
-    text-align: left;
+    	text-align: left;
 }
 
 input{
-    border: none;
-    border-bottom: 1px solid black;
-    width: 50%;
-    outline: none;
-    padding: 5px;
-    margin-top: 3px;
+    	border: none;
+    	border-bottom: 1px solid black;
+    	width: 50%;
+    	outline: none;
+    	padding: 5px;
+    	margin-top: 3px;
 }
 
 .inner-login-form input{
-    width: 100%;
+    	width: 100%;
 }
 
 .viewpwd{
-    position: relative;
-    float: right;
-    top: -20px;
-    right: 5px;
+    	position: relative;
+    	float: right;
+    	top: -20px;
+    	right: 5px;
 }
 
 .btnLogin{
-    margin-top: 40px;
-    text-align: center;
-    border-radius: 25px;
-    border: 3px solid #13a1ab;
-    outline: none;
-    padding: 4px;
-    width: 100px;
-    font-size: 17px;
-    background-color: var(--colour6);
-    text-transform: uppercase;
+    	margin-top: 40px;
+    	text-align: center;
+    	border-radius: 25px;
+    	border: 3px solid #13a1ab;
+    	outline: none;
+    	padding: 4px;
+    	width: 100px;
+    	font-size: 17px;
+    	background-color: var(--colour6);
+    	text-transform: uppercase;
 }
 
 .btnLogin:hover{
-    box-shadow: 0px 8px 16px 0px rgba(14, 153, 159, 0.4);
+    	box-shadow: 0px 8px 16px 0px rgba(14, 153, 159, 0.4);
 }
 
 .btnLogin:hover .log-txt{
-    font-size: 17.5px;
+    	font-size: 17.5px;
 }
 
 .login-form .home{
-    width: 100%;
-    text-align: right;
-    padding-right: 15px;
+    	width: 100%;
+    	text-align: right;
+    	padding-right: 15px;
     
 }
 
 .lnkHome{
-    font-size: 12px;
-    color: black;
+    	font-size: 12px;
+    	color: black;
 }
 
 .home i{
-    padding-left: 5px;
-    color: black;
+    	padding-left: 5px;
+    	color: black;
 }
 
 .lnkHome:visited{
-    color: black;
+    	color: black;
 }
