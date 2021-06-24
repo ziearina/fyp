@@ -257,7 +257,6 @@ input{
 /*------------SIGN UP------------*/
 .reg-group{
     padding-top: 12.6px;
-    /* background-color: #00827E; */
 }
 
 .name{
@@ -275,14 +274,5 @@ input{
     text-align: left;
     padding-top: 8px;
     width: fit-content;
-    /* background-color: #00827E; */
 }
 
-@media screen and (min-width: 950){
-    .reg-btn{
-        text-align: left;
-        padding-top: 4px;
-        width: fit-content;
-        background-color: #00827E;
-    }
-}
