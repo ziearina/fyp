@@ -24,7 +24,7 @@ document.getElementById("cfmtoggle").addEventListener("click", function(e) {
 
 // check empty string and validate pwd and cfmpwd. (Password matching)
 document.querySelector('.btnRegister').onclick = function(){
-    var fullname = document.querySelector('.name').value;
+    var fullname = document.querySelector('.fullname').value;
     var username = document.querySelector('.username').value;
     var password = document.querySelector('.password').value;
     var cfmPassword = document.querySelector('.cfmpassword').value;
