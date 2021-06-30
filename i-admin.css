@@ -1,0 +1,138 @@
+/*LOGO - GreenZ*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&display=swap');
+/*welcome text*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&family=Courgette&family=Parisienne&display=swap');
+/*SignIn/CreateAccount*/
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root{
+    --logo: #ecece4;
+    --colour1: #99E6B2;
+    --colour2: #7AD2A8;
+    --colour3: #5CBE9D;
+    --colour4: #3DAA93;
+    --colour5: #1F9688;
+    --colour6: #00827E;
+}
+
+/*-------------HEADER /TOP NAVIGATION/------------*/
+header{
+    position: fixed;
+    background: var(--colour6);
+    padding: 25px;
+    width: 100%;
+    height: 35px;
+    margin-top: -5px;
+    padding-bottom: 35px;
+}
+
+.nav-bar h3{
+    color: white;
+    padding-left: 240px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.nav-bar span{
+    color: var(--colour2);
+    text-transform: lowercase;
+}
+
+header .nav-bar{
+    padding-bottom: 30px;
+}
+
+.nav-name3{
+    margin-left: 2px;
+}
+
+.nav-name4{
+    margin-left: -1.2px;
+}
+
+.nav-name5{
+    margin-left: 3px;
+}
+/*-------------/DROPDOWN/------------*/
+
+.dropdown{
+    padding: 6px 35px;
+    background: var(--colour5);
+    float: right;
+    margin-top: -38px;
+    margin-right: 40px;
+    border-radius: 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+    transition-property: background;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.dropdown:hover{
+    background: var(--colour4);
+    color: var(--colour6);
+}
+
+.dropdown .fas{
+    color: var(--colour1);
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+.dropdown:hover .fas{
+    color:white;
+}
+
+/*-------------/LEFT-SIDE NAVIGATION/------------*/
+
+
+.sidenav{
+    background-color: var(--colour6);
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    color: white;
+    overflow-y: auto;
+    padding: 0rem 3rem;
+    position: fixed;
+}
+
+.sidenav .prof-pic{
+    width: 3.4cm;
+    height: 3.2cm;
+    border-radius: 10%;
+    z-index: 200;
+    margin-top: 30px;
+}
+
+.sidenav .role{
+    margin-bottom: 40px;
+}
+
+.sidenav li{
+    margin-bottom: 2rem;
+}
+
+.sidenav a{
+    color: var(--logo);
+}
+
+.sidenav a span:last-child{
+    padding-left: .6rem;
+}

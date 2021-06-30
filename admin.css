@@ -1,0 +1,160 @@
+/* font-family: 'Courgette', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&display=swap');
+/* font-family: 'Be Vietnam', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&family=Courgette&family=Parisienne&display=swap');
+/* font-family: 'Modak', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root{
+    --logo: #ecece4;
+    --colour1: #99E6B2;
+    --colour2: #7AD2A8;
+    --colour3: #5CBE9D;
+    --colour4: #3DAA93;
+    --colour5: #1F9688;
+    --colour6: #00827E;
+}
+
+/*-------------/MAIN CONTENT/------------*/
+.main-content{
+    margin-left: 240px;
+    padding-top: 50px;
+}
+
+.content{
+    padding-bottom: 15px;
+}
+
+.table-content{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table-content h3{
+    margin: 1rem;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--colour6);
+    font-size: 30px;
+}
+
+.lists{
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.lists table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lists thead{
+    background: #efefef;
+    text-align: left;
+}
+
+table{
+    border: 2px solid black;
+}
+
+th{
+    background-color: #004953;
+    color: white;
+    
+}
+
+th, td{
+    font-size: .9rem;
+    padding: 10px 9px;
+    text-align: center;
+}
+
+td{
+    font-size: 15px;
+    color: black;
+}
+
+.prodID{
+    width: fit-content;
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--colour4);
+}
+
+.action-edit{
+    font-size: 20px;
+    text-align: center;
+}
+
+.btnAction{
+    color: black;
+    letter-spacing: 5px;
+}
+
+.btnAction:visited{
+    color: black;
+}
+
+.product-header{
+    display: inline-flex;
+    margin-right: 5px;
+}
+
+
+/*-------ADD BUTTON-------*/
+
+.add-product{
+    width: fit-content;
+    margin-left: 206px;
+    margin-right: 95px;
+    padding-top: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.add-product a, .add-product a:visited{
+    color: var(--colour5);
+}
+
+.add-product .fas{
+    margin-left: 10px;
+}
+
+/*-------SEARCH-------*/
+.search{
+    margin-top: 23px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.search i{
+    float: right;
+    margin-left: 185px;
+    position: absolute;
+    color: var(--colour6);
+    font-size: 20px;
+}
+
+.search-product{
+    float: right;
+    width: 180px;
+    border-radius: 15px;
+    height: 30px;
+    margin-top: -5px;
+    outline: 0;
+    padding-left: 15px;
+    padding-right: 5px;
+    border: 1px solid #004953;
+}
