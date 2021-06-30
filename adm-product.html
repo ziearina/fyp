@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProZ Admin</title>
+    <link type="text/css" href="admin.css" rel="stylesheet"/>
+    <link type="text/css" href="i-admin.css" rel="stylesheet"/>
+    <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+    <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--SIDEBAR-->
+    <div class="sidenav">
+        <center>
+            <img src="img/admin.jpg" class="prof-pic" alt="GREENZ ADMINISTRATOR">
+            <h4 class="role">ADMINISTRATOR</h4>
+        </center>
+
+        <ul class="nav">
+            <!--DASHBOARD-->
+            <li>
+                <a href="admin.html">
+                    <span class="fas fa-desktop"></span>
+                    <span class="nav-name1">Dashboard</span>
+                </a>
+            </li>
+
+            <!--ORDERS LIST-->
+            <li>
+                <a href="#">
+                    <span class="fas fa-shopping-cart"></span>
+                    <span class="nav-name2">Orders List</span>
+                </a>
+            </li>
+
+            <!--PRODUCT LIST-->
+            <li>
+                <a href="adm-product.html">
+                    <span class="fas fa-list-ul"></span>
+                    <span class="nav-name3">Product List</span>
+                </a>
+            </li>
+
+            <!--CUSTOMER LIST-->
+            <li>
+                <a href="#">
+                    <span class="fas fa-users"></span>
+                    <span class="nav-name4">Customer List</span>
+                </a>
+            </li>
+
+            <!--REPORTS-->
+            <li>
+                <a href="#">
+                    <span class="fas fa-chart-line"></span>
+                    <span class="nav-name5">Report</span>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+
+    <!--HEADER-->
+    <header>
+
+        <div class="nav-bar"> 
+
+            <div class="left-bar">
+                <h3>GreenZ<span>Admin.</span></h3>
+            </div>
+
+            <div class="middle-bar">
+                <a href="log-in.html" class="dropdown"><span class="fas fa-comment"></span></a>
+            </div>
+
+            <div class="right-bar">
+                <a href="log-in.html" class="dropdown"><span class="i-out fas fa-sign-out-alt"></span>logout</a>
+            </div>
+
+        </div><!--/.nav-bar-->
+
+    </header>
+    <!--/HEADER-->
+
+    <div class="main-content">
+
+        <div class="content">
+
+            <div class="table-content">
+
+                <div class="product-header">
+                    <h3 class="prd-header">Product List</h3>
+
+                    <!--ADD PRODUCT-->
+                    <div class="add-product">
+                        <a href="add-product.html" class="add-btn">Add Product<span class="fas fa-plus-circle"></span></a>
+                    </div>
+
+                    <!--SEARCH FUNCTION-->
+                    <div class="search">
+                        <input type="search" placeholder="Search for.." class="search-product"><i class="fas fa-search-plus"></i>
+                    </div>
+                    
+                </div><!--/.product-header-->
+
+                <div class="lists">
+
+                    <table border="3">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Image</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!--ROW 1-->
+                            <tr>
+                                <td class="prodID">G001</td>
+                                <td>Flower Soap Box</td>
+                                <td>Gifts</td>
+                                <td>RM 10</td>
+                                <td>100</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/gift1 - flowersoapbox.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 2-->
+                            <tr>
+                                <td class="prodID">G002</td>
+                                <td>Bouquet For You</td>
+                                <td>Gifts</td>
+                                <td>RM 12</td>
+                                <td>100</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/gift2 - flowersoapbouquet.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 3-->
+                            <tr>
+                                <td class="prodID">M001</td>
+                                <td>KN95 Mask</td>
+                                <td>Masks</td>
+                                <td>RM 7</td>
+                                <td>200</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/mask2 - kn95.png"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 4-->
+                            <tr>
+                                <td class="prodID">M002</td>
+                                <td>Cloth Mask</td>
+                                <td>Masks</td>
+                                <td>RM 10</td>
+                                <td>50</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/mask3 - reusable.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 5-->
+                            <tr>
+                                <td class="prodID">N001</td>
+                                <td>Simple Notebook</td>
+                                <td>Notebooks</td>
+                                <td>RM 4</td>
+                                <td>500</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/notebook.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 6-->
+                            <tr>
+                                <td class="prodID">N002</td>
+                                <td>Premium Notebook</td>
+                                <td>Notebooks</td>
+                                <td>RM 8</td>
+                                <td>500</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/notebook3 - bookwithring.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 7-->
+                            <tr>
+                                <td class="prodID">P001</td>
+                                <td>Agave Plant</td>
+                                <td>Plants</td>
+                                <td>RM 10</td>
+                                <td>200</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/plant3 - agave.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 8-->
+                            <tr>
+                                <td class="prodID">P002</td>
+                                <td>Cute Cactus</td>
+                                <td>Plants</td>
+                                <td>RM 3</td>
+                                <td>50</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/plant5 - cactus.png"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 9-->
+                            <tr>
+                                <td class="prodID">T001</td>
+                                <td>Full of Leaves</td>
+                                <td>Tote Bags</td>
+                                <td>RM 5</td>
+                                <td>500</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/totebag1 - fullofleaves.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+
+                            <!--ROW 10-->
+                            <tr>
+                                <td class="prodID">T002</td>
+                                <td>Astronaut</td>
+                                <td>Tote Bags</td>
+                                <td>RM 10</td>
+                                <td>30</td>
+                                <td><img style="width: 150px; height: 150px; object-fit: cover;" src="img/totebag2 - astronaut.jpg"/></td>
+                                <td class="action-edit">
+                                    <!--EDIT-->
+                                    <a class="btnAction" href="update-product.html">
+                                        <span class="fas fa-edit"></span>
+                                    </a>   
+                                </td>
+                            </tr><!--END ROW-->
+                                     
+                        </tbody>
+
+                    </table>
+
+                </div><!--/.bookings-->
+
+            </div><!--/.table-content-->
+        
+
+        </div><!--/.content-->
+
+    </div><!--/.main-content-->
+    
+</body>
+</html>
