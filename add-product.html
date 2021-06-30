@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProZ Admin</title>
+    <link type="text/css" href="admin.css" rel="stylesheet"/>
+    <link type="text/css" href="i-admin.css" rel="stylesheet"/>
+    <link type="text/css" href="update-product.css" rel="stylesheet"/>
+    <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+    <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--SIDEBAR-->
+    <div class="sidenav">
+        <center>
+            <img src="img/admin.jpg" class="prof-pic" alt="GREENZ ADMINISTRATOR">
+            <h4 class="role">ADMINISTRATOR</h4>
+        </center>
+
+        <ul class="nav">
+
+            <!--PRODUCT LIST-->
+            <li>
+                <a href="adm-product.html">
+                    <span class="fas fa-list-ul"></span>
+                    <span class="nav-name3">Product List</span>
+                </a>
+            </li>
+
+        </ul>
+        
+    </div>
+
+    <!--HEADER-->
+    <header>
+
+        <div class="nav-bar"> 
+
+            <div class="left-bar">
+                <h3>GreenZ<span>Admin.</span></h3>
+            </div>
+
+        </div><!--/.nav-bar-->
+
+    </header>
+    <!--/HEADER-->
+
+    <div class="main-content">
+
+        <form class="form-container add-form" action="#" method="POST" enctype="multipart/form-data">
+
+            <div class="add-product-card">
+
+                <div class="add-product-details">
+
+                    <span class="product id">
+                        <label>Product ID : </label>
+                        <input type="text" class="productID" name="productID">
+                    </span>
+                    
+                    <span class="product name">
+                        <label>Product Name : </label>
+                        <input type="text" class="product_name" name="product_name">
+                    </span>
+
+                    <span class="product category">
+                        <label>Product Category : </label>
+                        <select name="product_category" class="product_category">
+                            <option value="Plants">Plants</option>
+                            <option value="Gifts">Gifts</option>
+                            <option value="Tote Bags">Tote Bags</option>
+                            <option value="Notebooks">Notebooks</option>
+                            <option value="Masks">Masks</option>
+                        </select>
+                    </span>
+                    
+                    <span class="product price">
+                        <label>Product Price : RM</label>
+                        <input type="text" class="product_price" name="product_price">
+                    </span>
+
+                    <span class="product quantity">
+                        <label>Product Quantity : </label>
+                        <input type="text" maxlength="4" class="product_quantity"name="product_quantity">
+                    </span>
+
+                    <!--IMAGE-->
+                    <span class="product image">
+                        <label>Product Image : </label>
+                        <input type="file" class="file-type" name="product_image"/>
+                    </span>
+                
+                </div><!--/.product-details-->
+
+                <!--ADD BUTTON-->
+                <div class="log-btn">
+                    <button type="submit" class="buttons btnAdd" name="btnAdd"><span  class="add-txt">Add<i class="fas fa-plus-circle"></i></span></button>
+                </div>
+
+                <script src="add-product.js" type="text/javascript"></script>
+            
+            </div><!--/.book-card-->
+
+        </form><!--/.update-form-->
+
+    </div><!--main-content-->
+    
+</body>
+</html>
