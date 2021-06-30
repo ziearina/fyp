@@ -168,8 +168,9 @@
     border-radius: 50%;
     box-shadow: 0px 8px 16px 0px rgba(19, 47, 68, 0.4);
     background-color: #1F9688;
-    padding: 20px;
+    padding: 17px;
     visibility: hidden;
+    font-size: 15px;
 }
 
 .product-content:hover .fas{
