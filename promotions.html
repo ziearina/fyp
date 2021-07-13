@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promotions</title>
+  <link type="text/css" href="nav.css" rel="stylesheet"/>
+  <link type="text/css" href="promotions.css" rel="stylesheet"/>
+  <link type="image/x-icon" href="img/tab-icon.png" rel="shortcut icon"/>
+  <script src="https://kit.fontawesome.com/e384de1d7d.js" crossorigin="anonymous"></script>
+  <style>
+ 
+
+  </style>
+</head>
+  <body>
+
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      
+      <div class="inner-header">
+          
+        <div class="navbar">
+              
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/grenz.png" alt="GreenZ">
+            </a>
+          </div><!--/.logo-->
+            
+          <nav class="menu">
+            <ul class="nav-menu">
+                
+              <!--HOME-->
+              <li><a href="home.html">HOME<i class="fas fa-home"></i></a></li>
+              
+              <!--ABOUT US-->
+              <li><a href="aboutus.html">ABOUT US<i class="fas fa-info-circle"></i></a></li>
+              
+              <!--PROMOTIONS-->
+              <li><a href="#">PROMOTIONS<i class="fas fa-ticket-alt"></i></a></li>
+              
+              <!--PRODUCTS (DROPDOWN-MENU)-->
+              <li class="dropdown-menu" id="product-menu"><a href="products.html">PRODUCTS<i class="fas fa-angle-down"></i></a>
+                
+                <ul class="drop-menu-content">
+  
+                  <li><a href="#">PLANTS</a></li>
+  
+                  <li><a href="#">GIFTS</a></li>
+  
+                  <li><a href="#">TOTE BAGS</a></li>
+                  
+                  <li><a href="#">NOTEBOOKS</a></li>
+                  
+                  <li><a href="#">MASKS</a></li>
+  
+                </ul>
+  
+              </li>
+              
+              <!--FEEDBACK-->
+              <li><a href="feedback.html">FEEDBACK<i class="fas fa-comments"></i></a></li>
+  
+              <div li class="sub-menu">
+  
+                <!--CART-->
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+  
+                <!--LOGIN/SIGNUP-->
+                <a href="log-in.html"><i class="fas fa-user"></i></a>
+  
+              </div li>
+              
+              <!--SEARCH FUNCTION-->
+              <div class="search"><i class="fas fa-search">
+                <input type="search" placeholder="Search for.." 
+                id="search-text-input"onchange="OpenPage()"class="search-product"></i></div>
+                
+            </ul>
+            <script>
+                 function OpenPage(){
+                        var x = document.getElementById("search-text-input").value;
+                        
+                        if (x === "plants"){
+                            window.open("products.php");
+                        }
+                        if (x === "cactus"){
+                            window.open("products.php");
+                        }
+                        if (x === "bag"){
+                            window.open("products.php");
+                        }
+                        if (x === "bags"){
+                            window.open("products.php");
+                        }
+                        if (x === "gifts"){
+                            window.open("products.php");
+                        }
+                        if (x === "notebooks"){
+                            window.open("products.php");
+                        }
+                        if (x === "mask"){
+                            window.open("products.php");
+                        }
+                        if (x === "flower candle"){
+                            window.open("products.php");
+                        }
+                        if (x === "flower soap"){
+                            window.open("products.php");
+                        }
+                        if (x === "valentines"){
+                            window.open("products.php");
+                        }
+                        if (x === "notebook"){
+                            window.open("products.php");
+                        }
+                        if (x === "plant"){
+                            window.open("products.php");
+                        }
+    
+                    }
+                    
+                    </script>
+            </script>
+          </nav><!--/.menu-->
+            
+        </div><!--/.navbar-->
+        
+          
+      </div><!--/.inner-header-->
+        
+    </header><!--/.site-header-->
+    <body>
+      <section class="products-header vid-width">
+        <!-- <video width="600" height="600" autoplay="autoplay">
+          <source src="img/promovideo.mp4" type="video/mp4"/>
+        </video> -->
+     <div class="product-vid">
+    <vid class="vid-slides">
+      <video width = "100%" height="100%" 
+      autoplay muted
+      loop
+      preload="auto">
+       <source src="img/promovideo.mp4" type="video/mp4">
+     
+        <!-- src="img/promovideo.mp4"
+        preload="auto"
+        Align = "center"
+        autoplay="autoplay"
+        controls autoplay
+        loop> -->
+
+    </video> 
+    
+    </vid>
+    </div>
+    </section>
+    <br><br>
+    <section class="promotions">
+  
+      <h3>PROMOTIONS</h3>
+</section>
+  <div class="box">
+   <div class="ribbon ribbon-top-right"><span>15% off</span></div> 
+    
+    <div class="new-promo">
+  
+      <!---PRODUCT 1---->
+      <div class="col-promo">
+
+        <a href="products.html">
+          <img src="img/gift1 - flowersoapbox.jpg" 
+          style="width:98%;height:98%;"alt="New Arrivals" class="item-img">
+        </a>
+
+        <div class="item-desc">
+          <h5>Flower Soap Box</h5>
+          <p>RM 25</p>
+        </div>
+    
+      </div><!--/.col-product-->
+    </div>
+      <!---PRODUCT 2---->
+      <div class="box">
+        <div class="ribbon ribbon-top-right"><span>10% off</span></div>
+        
+        <div class="new-promo">
+      
+          <!---PRODUCT 2---->
+          <div class="col-promo">
+    
+            <a href="products.html">
+              <img src="img/gift2 - flowersoapbouquet.jpg" 
+              style="width:98%;height:98%;" alt="New Arrivals" class="item-img">
+            </a>
+    
+            <div class="item-desc">
+              <h5>Flower Soap Bouquet</h5>
+              <p>RM 40</p>
+            </div>
+    </div>
+    </div>
+          <!--/.col-product-->
+          <!---PRODUCT 3-->
+          <div class="box">
+            <div class="ribbon ribbon-top-right"><span>25% off</span></div>
+            
+            <div class="new-promo">
+          
+              <!---PRODUCT 3---->
+              <div class="col-promo">
+        
+                <a href="products.html">
+                  <img src="img/gift4 - lavendercandle.jpg" 
+                  style="width:98%;height:98%;" alt="New Arrivals" class="item-img">
+                </a>
+        
+                <div class="item-desc">
+                  <h5>Lavender Candle</h5>
+                  <p>RM 30</p>
+                </div>
+        </div>
+        </div>
+        <!--/.col-product-->
+          <!---PRODUCT 4-->
+          <div class="box">
+            <div class="ribbon ribbon-top-right"><span>15% off</span></div>
+            
+            <div class="new-promo">
+          
+              <!---PRODUCT 4---->
+              <div class="col-promo">
+        
+                <a href="products.html">
+                  <img src="img/notebook1 - bookwithpen.jpg" 
+                  style="width:98%;height:98%;" alt="New Arrivals" class="item-img">
+                </a>
+        
+                <div class="item-desc">
+                  <h5>Notebooks With Pens</h5>
+                  <p>RM 3</p>
+                </div>
+        </div>
+        </div>
+            <!--/.col-product-->
+          <!---PRODUCT 5-->
+          <div class="box">
+            <div class="ribbon ribbon-top-right"><span>10% off</span></div>
+            
+            <div class="new-promo">
+          
+              <!---PRODUCT 5---->
+              <div class="col-promo">
+        
+                <a href="products.html">
+                  <img src="img/totebag1 - fullofleaves.jpg" 
+                  style="width:98%;height:98%;" alt="New Arrivals" class="item-img">
+                </a>
+        
+                <div class="item-desc">
+                  <h5>Tote bags</h5>
+                  <p>RM 13</p>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+   </div>
+   </div>
+   </div>
+ 
+  </body>
+    <footer>
+      <center class="social-media">
+        <h4>FOLLOW US FOR MORE</h4>
+        <a href="aboutus.html"><img src="img/facebook.png" alt="GreenZ Facebook Page"></a>
+        <a href="aboutus.html"><img src="img/ig.png" alt="GreenZ Instagram"></a>
+        <a href="aboutus.html"><img src="img/twitter.png" alt="GreenZ Twitter"></a>
+      </center>
+  
+      <center class="bank-acc">
+        <h4>ALL RIGHTS RESERVED GREENZ.</h4>
+        <img src="img/visa.png" alt="">
+        <img src="img/visa1.png" alt="">
+        <img src="img/paypal.png" alt="">
+      </center>
+  
+  
+    </footer>
+ 
